@@ -148,35 +148,43 @@
         height: auto;
         display: block;
     }
+    
+    /* 卡片標題字體 */
     #services-448 .cs-h3 {
-        /* 20px - 25px */
-        font-size: clamp(1.25rem, 1.9vw, 1.5625rem);
+        font-size: clamp(1.375rem, 2.1vw, 1.75rem);
         line-height: 1.2em;
         font-weight: 700;
         margin: 0 0 0.5rem 0;
         color: var(--headerColor);
     }
+
+    /* 卡片內文字體 */
     #services-448 .cs-item-text {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        font-size: clamp(1rem, 1.6vw, 1.125rem);
         line-height: 1.5em;
         font-weight: 400;
         /* 20px - 24px */
         margin: 0 0 clamp(1.25rem, 1.5vw, 1.5rem);
         color: var(--bodyTextColor);
     }
+
+  
     #services-448 .cs-link {
-        /* 16px - 20px */
-        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        font-size: clamp(1.125rem, 1.7vw, 1.375rem);
         line-height: 1.5em;
         font-weight: 700;
-        text-transform: uppercase;
         text-decoration: none;
         margin: 0;
-        color: var(--primary);
+        color: #2563eb; 
         display: inline-block;
         position: relative;
+        transition: color 0.3s;
     }
+    
+    #services-448 .cs-link:hover {
+        color: #fcb331; 
+    }
+
     #services-448 .cs-link:hover:before {
         width: 100%;
     }
@@ -221,5 +229,3 @@
         height: clamp(14rem, 28vw, 26.75rem);
     }
 }
-
-                                

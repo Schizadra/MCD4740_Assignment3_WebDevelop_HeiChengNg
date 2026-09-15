@@ -1,5 +1,5 @@
 /*-- -------------------------- -->
-<---     Mobile Navigation      -->
+<---        Mobile Navigation      -->
 <--- -------------------------- -*/
 /* Mobile - 1023.5px */
 @media only screen and (max-width: 1023.5px) {
@@ -238,8 +238,9 @@
     bottom: -0.125rem;
     left: 0;
   }
+  /* 已移除手機版當前頁面的底線顯示 */
   #cs-navigation .cs-li-link.cs-active:before {
-    display: block;
+    display: none;
   }
   #cs-navigation .cs-button-solid {
     display: none;
@@ -306,21 +307,32 @@
     /* prevent flexbox from squishing it */
     flex: none;
   }
+  
+  /* 只有當滑鼠移到「該選項本身 (cs-li)」時，底線動畫才觸發 */
+  #cs-navigation .cs-li:hover .cs-li-link:before {
+    width: 100%;
+  }
+  #cs-navigation .cs-li:hover .cs-li-link {
+    color: var(--secondary); /* 滑鼠懸停時改變顏色 */
+  }
+
   #cs-navigation .cs-li-link {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1vw, 1rem);
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
     line-height: 1.5em;
     text-decoration: none;
     margin: 0;
     color: var(--bodyTextColor);
     display: block;
     position: relative;
+    transition: color 0.3s;
   }
-  #cs-navigation .cs-li-link:hover:before {
-    width: 100%;
+
+  #cs-navigation .cs-li-link.cs-active {
+    color: var(--primary);
   }
+  /* 已移除桌面版當前頁面的底線顯示 */
   #cs-navigation .cs-li-link.cs-active:before {
-    width: 100%;
+    display: none;
   }
   #cs-navigation .cs-li-link:before {
     /* active state underline */
@@ -335,6 +347,8 @@
     left: 0;
     transition: width 0.3s;
   }
+
+  /* Contact us 按鈕（.cs-button-solid）調整 */
   #cs-navigation .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
@@ -353,12 +367,13 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    transition: color 0.3s; /* 讓文字變色更平滑 */
   }
   #cs-navigation .cs-button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
-    background: #000;
+    background: var(--secondary); /* 將原本死板的黑色背景改成使用你的主視覺色彩 (--secondary) */
     opacity: 1;
     border-radius: 0.25rem;
     position: absolute;
@@ -367,13 +382,15 @@
     z-index: -1;
     transition: width 0.3s;
   }
+  #cs-navigation .cs-button-solid:hover {
+    color: var(--headerColor); /* 滑鼠放上去時文字變成深色，與背景跳色更明顯 */
+  }
   #cs-navigation .cs-button-solid:hover:before {
     width: 100%;
   }
 }
 
 :root {
-    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     --primary: #14213d;
     --primaryLight: #fca311;
     --secondary: #fca311;
@@ -381,13 +398,11 @@
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
-    /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+
 }
 
 body {
@@ -396,9 +411,9 @@ body {
 }
 
 *, *:before, *:after {
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
 }
+
 .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
@@ -410,27 +425,3 @@ body {
     margin-bottom: 0.25rem;
     display: block;
 }
-
-.cs-title {
-    font-size: var(--headerFontSize);
-    font-weight: 900;
-    line-height: 1.2em;
-    text-align: inherit;
-    max-width: 43.75rem;
-    margin: 0 0 1rem 0;
-    color: var(--headerColor);
-    position: relative;
-}
-
-.cs-text {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    max-width: 40.625rem;
-    margin: 0;
-    color: var(--bodyTextColor);
-}
-
-                         
-                                

@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="services2.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="userinfo.css">
+    <!--webfont 1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -18,7 +28,7 @@
     <div class="cs-container">
         <!--Nav Logo-->
         <a href="" class="cs-logo" aria-label="Return to Amelia Turner Home page">
-            <img src="Icon.png" alt="" width="210" height="29" aria-hidden="true" decoding="async">
+            <img src="Icon.webp" alt="" width="210" height="29" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" aria-label="main navigation">
@@ -40,28 +50,23 @@
                     </li>
                     <li class="cs-li">
                         <a href="" class="cs-li-link">
-                            About
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
                             Services
                         </a>
                     </li>
                     <li class="cs-li">
                         <a href="" class="cs-li-link">
-                            About Us
+                           Reviews
                         </a>
                     </li>
                     <li class="cs-li">
                         <a href="" class="cs-li-link">
-                            FAQ
+                            Contact Us
                         </a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <a href="" class="cs-button-solid cs-nav-button">Book an appointment</a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <!--<button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
             <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve" aria-hidden="true"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
@@ -92,9 +97,9 @@
 
         <!-- Background Image -->
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="Gemini_Generated_Image_3qg32m3qg32m3qg3.jpg">
-            <source media="(min-width: 601px)" srcset="Gemini_Generated_Image_3qg32m3qg32m3qg3.jpg">
-            <img loading="lazy" decoding="async" src="Gemini_Generated_Image_3qg32m3qg32m3qg3.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="Background.webp">
+            <source media="(min-width: 601px)" srcset="Background.webp">
+            <img loading="lazy" decoding="async" src="Background.webp" alt="field" width="1920" height="1200" aria-hidden="true">
         </picture>
 
         <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
@@ -140,9 +145,9 @@
                         <a href="" class="cs-link">Learn More</a>
                     </div>
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="Challenge.jpg">
-                        <source media="(min-width: 601px)" srcset="Challenge.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="Challenge.jpg" alt="grass" width="345" height="428">
+                        <source media="(max-width: 600px)" srcset="Challenge.webp">
+                        <source media="(min-width: 601px)" srcset="Challenge.webp">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="Challenge.webp" alt="grass" width="345" height="428">
                     </picture>
                 </li>
                 <li class="cs-item">
@@ -155,9 +160,9 @@
                         <a href="" class="cs-link">Learn More</a>
                     </div>
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="FixTheGap.jpg">
-                        <source media="(min-width: 601px)" srcset="FixTheGap.jpg">
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="FixTheGap.jpg" alt="leaves" width="345" height="428">
+                        <source media="(max-width: 600px)" srcset="FixTheGap.webp">
+                        <source media="(min-width: 601px)" srcset="FixTheGap.webp">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="FixTheGap.webp" alt="leaves" width="345" height="428">
                     </picture>
                 </li>
             </ul>
@@ -169,11 +174,12 @@
 <!-- ============================================ -->
 
 <section id="services-1267">
+    <div class="cs-flow-lines"></div>
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Our services</span>
-            <h2 class="cs-title">We offer project management services</h2>
-            <p class="cs-text">We can help you design your project and develop a comprehensive plan to ensure that it meets your specific needs and requirements. Our team of architects and engineers will work closely with you to create a design that is both functional and aesthetically pleasing.</p>
+            <span class="cs-topper">Our Goals & Purpose</span>
+            <h2 class="cs-title">We offer Professional Business Consultation.</h2>
+            <p class="cs-text">We help you diagnose business bottlenecks and develop a comprehensive strategic plan to ensure your enterprise scales efficiently. Our experienced coaching team works closely with your leadership to build sustainable growth and a high-performing organizational structure.</p>
         <br>
             <a href="" class="cs-button-solid" aria-label="learn more about us">Learn More</a>
         </div>
@@ -183,7 +189,7 @@
                     <h3 class="cs-h3">
                         <picture class="cs-picture">
                             <img class="cs-icon" aria-hidden="true"
-                                    src="https://csimg.nyc3.digitaloceanspaces.com/Services/two-people.svg" alt="svg icon"
+                                    src="best-employee.png" alt="svg icon"
                                     width="37" height="29" loading="lazy" decoding="async">
                         </picture>
                         Experience
@@ -197,8 +203,8 @@
                     <h3 class="cs-h3">
                         <picture class="cs-picture">
                             <img class="cs-icon" aria-hidden="true"
-                                    src="https://csimg.nyc3.digitaloceanspaces.com/Services/line-graph.svg" alt="svg icon"
-                                    width="37" height="29" loading="lazy" decoding="async">
+                                    src="practice.png" alt="svg icon"
+                                    width="72" height="58" loading="lazy" decoding="async">
                         </picture>
                         Practical Approach
                     </h3>
@@ -211,8 +217,8 @@
                     <h3 class="cs-h3">
                         <picture class="cs-picture">
                             <img class="cs-icon" aria-hidden="true"
-                                    src="https://csimg.nyc3.digitaloceanspaces.com/Servicesbriefcase2.svg" alt="svg icon"
-                                    width="37" height="29" loading="lazy" decoding="async">
+                                    src="trustworthiness.png" alt="svg icon"
+                                    width="72" height="58" loading="lazy" decoding="async">
                         </picture>
                         Trusted Guidance
                     </h3>
@@ -225,8 +231,8 @@
                     <h3 class="cs-h3">
                         <picture class="cs-picture">
                             <img class="cs-icon" aria-hidden="true"
-                                    src="https://csimg.nyc3.digitaloceanspaces.com/Services/three-bars.svg" alt="svg icon"
-                                    width="37" height="29" loading="lazy" decoding="async">
+                                    src="solution.png" alt="svg icon"
+                                    width="72" height="58" loading="lazy" decoding="async">
                         </picture>
                         Strategic Partners
                     </h3>
@@ -254,7 +260,7 @@
             <ul class="cs-card-group">
                 <li class="cs-item">
                     <img class="cs-image" src="Custom1.jpg" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
+                    <img class="cs-icon" src="quote.png" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
                     <p class="cs-item-text">
                         Working with this coaching team completely changed our trajectory. They helped us identify critical market gaps and restructure our Go-To-Market strategy. Revenue grew by 45% in just two quarters.
                     </p>
@@ -265,7 +271,7 @@
                 </li>
                 <li class="cs-item">
                     <img class="cs-image" src="Custom3.jpg" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
+                    <img class="cs-icon" src="quote.png" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
                     <p class="cs-item-text">
                        An absolute game-changer for our executive management. The strategic alignment sessions gave our leadership team the clarity and confidence to scale operations smoothly across regions.
                     </p>
@@ -276,7 +282,7 @@
                 </li>
                 <li class="cs-item">
                     <img class="cs-image" src="Custom2.jpg" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
+                    <img class="cs-icon" src="quote.png" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
                     <p class="cs-item-text">
                         The insights we gained transformed how we handle internal workflows and high-pressure bottlenecks. Professional, pragmatic, and incredibly results-driven. Highly recommended!
                     </p>
@@ -301,7 +307,7 @@
             <!-- Logo Group -->
             <div class="cs-logo-group">
                 <a aria-label="go back to home" class="cs-logo" href="">
-                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="Icon.png" alt="logo" width="178" height="32">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="Icon.webp" alt="logo" width="178" height="32">
                 </a>
                 <p class="cs-header">
                     AMELIA TURNER
@@ -309,7 +315,7 @@
                     BUSINESS COACH | AUTHOR | SPEAKER
                 <br>
                 </p>
-                <p>
+                <p class="cs-text">
                     Helping business owners solve problems, strengthen their businesses and create a life they love.
                 </p>
             </div>
@@ -357,7 +363,28 @@
         </div>
     </footer>
     
-    <button id="back-to-top" aria-label="Back to top">▲</button>                         
+    <button id="back-to-top" aria-label="Back to top">▲</button>
+    <div id="appointmentModalOverlay" class="appointment-modal-overlay">
+        <div class="appointment-modal">
+            <button id="appointmentCloseBtn" class="appointment-close-btn">&times;</button>
+            <h3>Book an Appointment</h3>
+            <form id="appointmentForm">
+                <div class="appointment-form-group">
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" name="userName" required placeholder="Enter your name">
+                </div>
+                <div class="appointment-form-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="userEmail" required placeholder="Enter your email">
+                </div>
+                <div class="appointment-form-group">
+                    <label for="userPhone">Phone</label>
+                    <input type="tel" id="userPhone" name="userPhone" required placeholder="Enter your phone number">
+                </div>
+                <button type="submit" class="appointment-submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>                        
     
 
 </body>

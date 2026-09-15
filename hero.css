@@ -36,6 +36,8 @@
     color: var(--bodyTextColorWhite);
   }
   #hero-1785 .cs-text {
+    /* 放大內文：從 1rem 改為稍微大一點的 clamp 範圍 (16px - 18px) */
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
     margin-bottom: 2rem;
   }
   #hero-1785 .cs-button-group {
@@ -45,7 +47,8 @@
     gap: 0.5rem;
   }
   #hero-1785 .cs-button-solid {
-    font-size: 1rem;
+    /* 放大按鈕文字大小 */
+    font-size: 1.125rem;
     font-weight: 700;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -62,12 +65,13 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    transition: color 0.3s;
   }
   #hero-1785 .cs-button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
-    background: #000;
+    background: var(--secondary); /* 改用你的主題色彩讓互動感更好 */
     opacity: 1;
     border-radius: 0.25rem;
     position: absolute;
@@ -75,6 +79,9 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+  }
+  #hero-1785 .cs-button-solid:hover {
+    color: var(--headerColor); /* 滑鼠懸停時文字變色 */
   }
   #hero-1785 .cs-button-solid:hover:before {
     width: 100%;
@@ -135,8 +142,7 @@
 }
 
 :root {
-    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #ff6a3e;
+    --primary: #fca311;
     --primaryLight: #fca311;
     --secondary: #fca311;
     --secondaryLight: #fca311;
@@ -150,17 +156,24 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --font-heading: "Momo Trust Display", sans-serif;
+    --font-text: "Faustina", serif;
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: var(--font-text);
 }
 
 *, *:before, *:after {
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
 .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
@@ -174,6 +187,7 @@ body {
 }
 
 .cs-title {
+    font-family: var(--font-heading);
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -193,9 +207,3 @@ body {
     margin: 0;
     color: var(--bodyTextColor);
 }
-
-
-
-
-                            
-                                

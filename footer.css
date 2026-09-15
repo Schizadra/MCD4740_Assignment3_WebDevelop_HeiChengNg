@@ -5,8 +5,9 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #cs-footer-308 {
-        padding: var(--sectionPadding);
-        background-color: #615c54;
+        /* 將原本大的 sectionPadding 改成較小的上下內距（例如：上方 3rem、下方 2rem） */
+        padding: 3rem 1rem 2rem 1rem;
+        background-color: #14213d;
         /* Navigation Links */
     }
     #cs-footer-308 .cs-container {
@@ -18,7 +19,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
-        gap: 2.5rem;
+        gap: 2rem; /* 稍微縮小區塊間距 */
     }
     #cs-footer-308 .cs-logo-group {
         /* takes up all the space, lets the other ul's wrap below it */
@@ -29,7 +30,7 @@
         width: 11.125rem;
         height: auto;
         display: block;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem; /* 縮小 Logo 下方的距離 */
     }
     #cs-footer-308 .cs-logo-img {
         width: 100%;
@@ -56,7 +57,7 @@
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        gap: 0.75rem;
+        gap: 0.5rem; /* 縮小導覽清單的行距 */
     }
     #cs-footer-308 .cs-nav-li {
         list-style: none;
@@ -65,11 +66,12 @@
         align-items: flex-start;
     }
     #cs-footer-308 .cs-header {
+        font-family: var(--font-heading);
         font-size: 1rem;
         line-height: 1.2em;
         text-transform: uppercase;
         font-weight: 700;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem; /* 縮小標題下方的距離 */
         color: var(--bodyTextColorWhite);
         position: relative;
         display: block;
@@ -97,7 +99,7 @@
         transition: width 0.3s;
     }
     #cs-footer-308 .cs-nav-link:hover {
-        color: var(--primary);
+        color: #fcb331;
     }
     #cs-footer-308 .cs-nav-link:hover:before {
         width: 100%;
@@ -110,8 +112,8 @@
     #cs-footer-308 .cs-bottom {
         max-width: 80rem;
         margin: auto;
-        margin-top: 2rem;
-        padding-top: 1.5rem;
+        margin-top: 1.5rem; /* 縮小版權列與上方內容的距離 */
+        padding-top: 1rem;   /* 縮小版權列上方的內距 */
         border-top: 1px solid #484848;
         display: flex;
         justify-content: center;
@@ -128,7 +130,7 @@
         transition: color 0.3s;
     }
     #cs-footer-308 .cs-copyright-link:hover {
-        color: var(--primary);
+        color: #fcb331;
     }
 }
 /* Tablet - 768px */
@@ -137,7 +139,7 @@
         row-gap: 0;
         flex-direction: row;
         justify-content: space-between;
-        row-gap: 2.5rem;
+        row-gap: 2rem;
     }
     #cs-footer-308 .cs-nav {
         width: auto;
@@ -162,5 +164,3 @@
         width: 100%;
     }
 }
-
-                                
